@@ -1,0 +1,55 @@
+.frame1 {
+  .bullets {
+    $fullWidth: 100%;
+    margin-top: 75px;
+    // height:95px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: $container-padding;
+    width: -webkit-calc(#{$fullWidth} + #{$container-padding} + #{$container-padding});
+    width: -moz-calc(#{$fullWidth} + #{$container-padding} + #{$container-padding});
+    width: calc(#{$fullWidth} + #{$container-padding} + #{$container-padding});
+    margin-left: -$container-padding;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content:space-between;
+
+    @media (max-width: 991px) {
+      padding-bottom: 30px;
+    }
+
+    background-color: $GRAY;
+
+    .iconrow {
+      align-items: center;
+      @media (max-width: 767px) {
+        margin-top: 20px;
+        justify-content: flex-start;
+      }
+    }
+
+    .iconcol {
+      display: flex;
+      justify-content: flex-end;
+      @media (max-width: 991px) {
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      @media (max-width: 575px) {
+        flex-direction: row;
+      }
+
+
+      img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+    p {
+      color: $WHITE;
+      font-size: 14px;
+    }
+  }
+}

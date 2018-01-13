@@ -1,0 +1,187 @@
+@import "colors";
+@import "variables";
+@import "navbar";
+@import "frame1";
+@import "passport";
+@import "envelope";
+@import "compass";
+@import "yellowblock";
+@import "fonts";
+@import "team";
+@import "menu";
+@import "prices";
+@import "about";
+@import "register";
+@import "footer";
+
+#wrapper {
+  color: $BLACK_LIGHT;
+  background-color: $GRAY_LIGHT;
+  font-family: 'Lato', sans-serif;
+  height: 2000px;
+}
+
+.container {
+  // padding: 0px;
+}
+
+.dk-container {
+  background-color: $WHITE;
+  position: relative;
+  // padding-left: $container-padding;
+  // padding-right: $container-padding;
+}
+
+.x-padding {
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+}
+
+.nopadding {
+  padding: 0px;
+}
+
+.padding-right {
+  padding-right: 15px;
+}
+
+#phone {
+  pointer-events: none;
+  z-index: 2;
+  position: absolute;
+  // border-color: #000;
+  // border-width: 1px;
+  // border-style: solid;
+  margin-top: -50px;
+  img {
+    // border-color: #ddd;
+    // border-width: 1px;
+    // border-style: solid;
+  }
+  @media (max-width: 991px) {
+    // margin-top: 20px -35px;
+  }
+
+  width: 100%;
+  left: 0;
+  right: 0;
+  &.scrolled {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    // margin-top: -50px;
+    // -webkit-appearance: none;
+  }
+  &.overscrolled {
+    position: absolute;
+  }
+}
+
+.glasses {
+  position: absolute;
+  margin-left: -140px;
+  margin-top: 400px;
+}
+
+.lock {
+  position: absolute;
+}
+
+h1 {
+  font-size: 26pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+p {
+  font-size: 16pt;
+  font-weight: 400;
+  margin: 0px;
+}
+
+a {
+  color: $BLACK;
+  &:hover {
+    color: #000;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.italic {
+  font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.dk-btn {
+  height: 50px;
+  padding: 0 20px 0 20px;
+  font-weight: 500;
+  font-family: 'GothamNarrowMedium';
+  font-style: normal;
+  font-size: 12pt;
+  text-transform: uppercase;
+  border-radius: 25px;
+  display: inline-flex;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+    background: #f4b300; /* Old browsers */
+    background: -moz-linear-gradient(top, #f4b300 0%, #ed9a00 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f4b300 0%,#ed9a00 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f4b300 0%,#ed9a00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4b300', endColorstr='#ed9a00',GradientType=0 ); /* IE6-9 */
+  }
+
+  &.dk-btn-small {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 28px;
+      border-radius: 14px;
+      font-size: 9pt;
+  }
+}
+
+.frame-to-reverse {
+  @media (max-width: 767px) {
+    flex-flow: column-reverse;
+  }
+}
+
+.phone-xs {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+    position: absolute;
+    z-index: 2;
+  }
+}
+
+.description-xs {
+  @media (max-width: 767px) {
+    margin-top: 40px;
+  }
+}
+
+.frame {
+  margin-top: 30px;
+  @media (max-width: 991px) {
+    margin-top: 60px;
+  }
+  .rotated-picture {
+
+    @media (min-width: 992px) {
+      transform: rotate(15deg) translateX(150px) translateY(10px);
+    }
+    @media (max-width: 991px) {
+      transform: rotate(15deg) translateX(150px) translateY(10px);
+    }
+    @media (max-width: 767px) {
+      transform: rotate(15deg) translateX(180px) translateY(10px);
+    }
+  }
+
+}

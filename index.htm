@@ -1,0 +1,1536 @@
+<html>
+ <header>
+ <meta charset="utf-8">
+	 
+<!--  Please don't read the code, it's awfull, I know. I wrote it a long time ago 	 -->
+	 
+	<link rel="stylesheet" href="style.css" type="text/css">
+  <script src="jquery-1.12.4.js"></script>
+	<script src="jquery-ui.js"></script>
+
+  <script type="text/javascript" src="isotope.js"></script>
+  <script type="text/javascript" src="filter.js"></script>
+  <script type="text/javascript" src="link.js"></script>
+ 	<script type="text/javascript" src="hideKamoji.js"></script>
+	<script type="text/javascript" src="hideBatman.js"></script>
+	<script type="text/javascript" src="celebsAppear.js"></script>
+	<script type="text/javascript" src="GifLinks.js"></script>
+	<script type="text/javascript" src="scroll_companies.js"></script>
+	<script type="text/javascript" src="expand_company.js"></script>
+
+	<meta name="description" content="Portfolio and web-CV of designer and developer Vasiljev Ivan" />
+	<meta name="keywords" content="portfolio,designer, programmer, developer, 2D, 3D, web develop, cv" />
+	<title>Vasiljev Ivan. 2D/3D Designer, Developer</title>
+
+	 <!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+			(function (d, w, c) {
+					(w[c] = w[c] || []).push(function() {
+							try {
+									w.yaCounter39761770 = new Ya.Metrika({
+											id:39761770,
+											clickmap:true,
+											trackLinks:true,
+											accurateTrackBounce:true,
+											webvisor:true
+									});
+							} catch(e) { }
+					});
+
+					var n = d.getElementsByTagName("script")[0],
+							s = d.createElement("script"),
+							f = function () { n.parentNode.insertBefore(s, n); };
+					s.type = "text/javascript";
+					s.async = true;
+					s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+					if (w.opera == "[object Opera]") {
+							d.addEventListener("DOMContentLoaded", f, false);
+					} else { f(); }
+			})(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/39761770" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+
+	 <script>
+		window.onload = function() {
+    var element = document.querySelectorAll( '.giflink' );
+    GifLinks( element );
+			
+    $('.2017').css('opacity', 0);
+    $('.2016').css('opacity', 1);
+    $('.2015').css('opacity', 0);
+    $('.2014').css('opacity', 0);
+    $('.2013').css('opacity', 0);
+    $('.2012').css('opacity', 0);
+			
+    $('.1991').css('opacity', 0);
+    $('#slider').css('left', -200);
+    var pos2 = parseFloat($('#slider').css('left'), 10);
+    var delta2 = -(pos2 * 2.3);
+    $('#companies_wrapper').css('left', delta2);
+			
+		}
+		
+		 $(document).ready( function() {
+        $('.check').delay(2000).fadeIn();
+        $('.check').delay(20).fadeOut();
+        $('.check').delay(20).fadeIn();
+        $('.check').delay(20).fadeOut();
+        $('.check').delay(20).fadeIn();
+        $('.check').delay(4000).fadeOut();
+        $('.clickme').delay(10000).fadeIn();
+        $('.clickme').delay(20).fadeOut();
+        $('.clickme').delay(20).fadeIn();
+        $('.clickme').delay(20).fadeOut();
+        $('.clickme').delay(20).fadeIn();
+        $('.clickme').delay(4000).fadeOut();
+      });
+	 </script>
+	
+ </header>
+	
+ 
+
+ <body>
+
+    <div class="kamoji_wrapper">
+      <div class="kamodji_r">(=^-ω-^=)</div>
+      <div class="kamodji_r">(⊙_⊙)</div>
+      <div class="kamodji_r">(<font style="color:#fc306f">❤</font>ω<font style="color:#fc306f">❤</font>)</div>
+      <div class="kamodji_r">(<font style="color:#ffb3cc">⁄ ⁄</font>•<font style="color:#ffb3cc">⁄</font>ω<font style="color:#ffb3cc">⁄</font>•<font style="color:#ffb3cc">⁄ ⁄</font>)</div>
+      <div class="kamodji_r">( • )( • )ԅ(≖‿≖ԅ)</div>
+      <div class="kamodji_r">ᕕ( ᐛ )ᕗ</div>
+      <div class="kamodji_r">^ↀᴥↀ^</div>
+    </div>
+
+   <div class="kamoji_wrapper" style="left:0 !important;">
+         <div class="kamodji_l"> | (• ◡•)| (❍ᴥ❍ʋ)</div>
+         <div class="kamodji_l">(/°(ｴ)°)/</div>
+         <div class="kamodji_l">(ʘ‿ʘ)╯</div>
+         <div class="kamodji_l">ヾ(＾∇＾)</div>
+         <div class="kamodji_l">(ﾉ￫ܫ￩)ﾉ</div>
+         <div class="kamodji_r">୧((#<font style="color:#ff3919">Φ</font>益<font style="color:#ff3919">Φ</font>#))୨</div>
+         <div class="kamodji_l">໒( ͡ᵔ ▾ ͡ᵔ )७</div>
+       </div>
+
+
+ <div class="reset">
+   <div class="clickme"> <img src="pics/clickme.png"></div>
+   <a href="" class="current" data-filter="*">*</a>
+ </div>
+
+ <div id="wrapper">
+
+
+
+
+
+  <div id="header_wrapper">
+		
+		<div class="check">
+			<img src="pics/check.png">
+		</div>
+		
+    <div class="h_left_raw">
+			
+			 <div class="left_raw_line">
+
+        <div class="left_raw_subline">
+          <img src="pics/gem.png"><p class="superfat" style="display: inline">&nbsp;&nbsp;—&nbsp;&nbsp;<a class="superfat headerlink" href="" data-filter=".prog">#Developer </a></p>
+
+        </div>
+
+        <div class="left_raw_subline" style="margin-left:135px;">
+          <p class="regular">(JavaScript/TypeScript, Angular/Ionic)</p>
+        </div>
+
+      </div>
+			
+		  <div class="left_raw_line">
+
+        <div class="left_raw_subline">
+          <img src="pics/eggplant.png"><p class="superfat" style="display: inline">&nbsp;&nbsp;—&nbsp;&nbsp;<a class="superfat headerlink" href="" data-filter=".dd">#2D designer </a></p>
+        </div>
+
+        <div class="left_raw_subline" style="margin-left:135px;">
+          <p class="regular">(Photoshop)</p>
+        </div>
+
+      </div>
+
+
+      <div class="left_raw_line">
+
+        <div class="left_raw_subline">
+          <img src="pics/fire.png"><p class="superfat" style="display: inline">&nbsp;&nbsp;—&nbsp;&nbsp;<a class="superfat headerlink current" href="" data-filter=".ddd" >#3D modeler </a></p>
+        </div>
+
+        <div class="left_raw_subline" style="margin-left:135px;">
+          <p class="regular">(3DS Max, ZBrush, Rhino)</p>
+        </div>
+
+      </div>
+
+
+      <div class="left_raw_line">
+
+        <div class="left_raw_subline">
+          <img src="pics/watermelon.png"><p class="superfat" style="display: inline">&nbsp;&nbsp;—&nbsp;&nbsp;<a class="superfat headerlink" href="" data-filter=".art">#Artist </a></p>
+        </div>
+
+        <div class="left_raw_subline" style="margin-left:135px;">
+          <p class="regular">(Digital tablet & traditional tools)</p>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+    <div id="h_right_raw" >
+
+
+
+
+      <div class="right_raw_half"  style="margin-top:-10px; margin-left:-20px;">
+        <div id="about_line">
+        </div>
+
+        <div id="about_more">
+          <p style="">></p>
+        </div>
+
+        <div id="about_text">
+
+          <p style="margin-top:20px; font-size:12pt; font-weight:400; line-height: 120%">
+            My&nbsp;name is&nbsp;Vasiljev Ivan, I&rsquo;m 25&nbsp;years old front-end developer and designer. <br><br>
+            I&nbsp;studied in&nbsp;Saint-Petersburg Polytechnical University as&nbsp;a&nbsp;product designer, now&nbsp;I work as cross-patform mobile app developer.
+						Also I have a couple of fellow developers, together we are a full-stack dev team, able to deliver whole package mobile- and web-apps. 
+          </p>
+        </div>
+
+      </div>
+
+      <div class="right_raw_half" style="margin-top:-30px;">
+
+        <div id="minor_hashtags_into">
+          <p style="margin-bottom:30px;">Also&nbsp;minor&nbsp;hashtags:</p>
+        </div>
+
+        <div class="add_hashtag" style="margin-top:5px;">
+          <div class="left_raw_subline">
+            <img src="pics/augmented.png"><p style="display: inline; font-size:14pt;">&nbsp;&nbsp;—&nbsp;&nbsp;<a class="fat headerlink_2 current" href="" data-filter=".aug">#Augmented Reality </a></p>
+          </div>
+
+        </div>
+        <div class="add_hashtag">
+          <div class="left_raw_subline">
+            <img src="pics/print.png"><p style="display: inline; font-size:14pt;">&nbsp;&nbsp;—&nbsp;&nbsp;<a class="fat headerlink_2" href="" data-filter=".print">#3D Print </a></p>
+          </div>
+
+        </div>
+        <div class="add_hashtag">
+          <div class="left_raw_subline">
+            <img src="pics/scan.png"><p style="display: inline; font-size:14pt;">&nbsp;&nbsp;—&nbsp;&nbsp;<a class="fat headerlink_2" href="" data-filter=".scan">#3D Scan </a></p>
+          </div>
+
+        </div>
+				
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="dots">
+    <div class="scissors">
+      <img src="pics/scissors.png">
+    </div>
+  </div>
+
+
+
+  <div class="gallery_wrapper">
+
+<!----- ->
+<!---------------------------------------------------------------------------------    1 -->
+    <a href="javascript:viewpage('lenincraft');" class="elementlink dd">
+
+      <div class="element ddd">
+        <div class="element_pic">
+
+          <img src="pics/covers/lenincraft.png" style="margin-top:15px;">
+          <div class="sticker dd">
+          </div>
+           <div class="sticker love">
+          </div>               
+					<p class="cover_title">Lenincraft</p>
+
+        </div>
+
+      </div>
+    </a>
+
+<!---------------------------------------------------------------------------------   2 -->
+    <a href="javascript:viewpage('lam');" class="elementlink ddd scan print">
+      <div class="element ddd">
+        <div class="element_pic">
+
+          <img src="pics/covers/lam.jpg">
+          <div class="sticker scan">
+          </div>
+          <div class="sticker ddd">
+          </div>
+          <div class="sticker print">
+						           <div class="sticker love">
+          </div>               
+
+          </div>
+                <p class="cover_title">Look At Me</p>
+
+        </div>
+
+      </div>
+    </a>
+
+
+<!---------------------------------------------------------------------------------   3 -->
+    <a href="javascript:viewpage('sneakers');" class="elementlink ddd scan">
+      <div class="element dd">
+        <div class="element_pic">
+
+          <img src="pics/covers/keds.jpg">
+          <div class="sticker ddd ">
+
+          </div>
+          <div class="sticker scan ">
+
+          </div>
+
+                <p class="cover_title">Sneakers</p>
+
+        </div>
+
+      </div>
+    </a>
+<!---------------------------------------------------------------------------------   4 -->
+    <a href="javascript:viewpage('bohemia');" class="elementlink elementlink-wide ddd aug prog">
+      <div class="element element-wide dd ">
+        <div class="element_pic element_pic_wide ">
+
+          <img src="pics/covers/bohemia2.jpg">
+          <div class="sticker sticker_wide aug">
+          </div>
+          <div class="sticker sticker_wide ddd">
+          </div>
+          <div class="sticker sticker_wideprog">
+          </div>
+                <p class="cover_title">Bohemia AR app</p>
+
+        </div>
+
+      </div>
+    </a>
+
+<!---------------------------------------------------------------------------------   8 -->
+    <a href="javascript:viewpage('russian');" class="elementlink ddd aug">
+      <div class="element ddd">
+        <div class="element_pic">
+
+          <img src="pics/covers/russian.jpg">
+          <div class="sticker ddd">
+          </div>
+          <div class="sticker aug">
+          </div>
+
+                <p class="cover_title">Russian House</p>
+
+        </div>
+
+      </div>
+    </a>
+
+
+    <!---------------------------------------------------------------------------------   6 -->
+        <a href="javascript:viewpage('old_lc');" class="elementlink dd art">
+          <div class="element ddd">
+            <div class="element_pic">
+
+              <img src="pics/covers/lcold.jpg">
+              <div class="sticker dd">
+              </div>
+              <div class="sticker art">
+              </div>
+							           <div class="sticker love">
+          </div>               
+                    <p class="cover_title">Old Lenincraft logo</p>
+
+            </div>
+
+          </div>
+        </a>
+
+<!---------------------------------------------------------------------------------   7 -->
+    <a href="javascript:viewpage('lamp');" class="elementlink ddd print" >
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/lamp.jpg">
+          <div class="sticker ddd">
+          </div>
+          <div class="sticker print">
+          </div>
+                <p class="cover_title">Elephant Lamp</p>
+
+        </div>
+
+      </div>
+    </a>
+<!---------------------------------------------------------------------------------   7 -->
+    <a href="javascript:viewpage('vyborg');" class="elementlink ddd scan" >
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/vyborg.jpg">
+          <div class="sticker ddd">
+          </div>
+          <div class="sticker scan">
+          </div>
+					           <div class="sticker love">
+          </div>               
+                <p class="cover_title">Vyborg Scans</p>
+
+        </div>
+
+      </div>
+    </a>
+<!---------------------------------------------------------------------------------   18 -->
+    <a href="javascript:viewpage('inter');" class="elementlink ddd">
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/viz.jpg">
+          <div class="sticker ddd">
+          </div>
+					
+					           <div class="sticker love">
+          </div>               
+
+                <p class="cover_title">Apartment visualization</p>
+
+        </div>
+
+      </div>
+    </a>
+<!--------------------------------------------------------------------------------- -->
+<!---------------------------------------------------------------------------------   5 -->
+    <a href="javascript:viewpage('ippt');" class="elementlink ddd aug prog">
+      <div class="element ddd">
+        <div class="element_pic">
+
+          <img src="pics/covers/ippt.jpg">
+          <div class="sticker aug">
+          </div>
+          <div class="sticker ddd">
+          </div>
+          <div class="sticker prog">
+          </div>
+                <p class="cover_title">IPPT AR app</p>
+
+        </div>
+
+      </div>
+    </a>
+		
+<!---------------------------------------------------------------------------------   9 -->
+    <a href="javascript:viewpage('messenger');" class="elementlink elementlink-wide dd prog">
+      <div class="element element-wide">
+        <div class="element_pic element_pic_wide">
+
+          <img src="pics/covers/messenger2.jpg">
+          <div class="sticker sticker_wide  dd">
+          </div>
+          <div class="sticker sticker_wide prog">
+          </div>
+
+
+                <p class="cover_title">Messenger App</p>
+
+        </div>
+
+      </div>
+    </a>
+<!--------------------------------------------------------------------------------- -->	
+		
+<!---------------------------------------------------------------------------------   9 -->
+    <a href="javascript:viewpage('kiselna');" class="elementlink ddd aug prog">
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/kiselna.jpg">
+          <div class="sticker aug">
+          </div>
+          <div class="sticker ddd">
+          </div>
+          <div class="sticker prog">
+          </div>
+
+
+                <p class="cover_title">Kiselna AR app</p>
+
+        </div>
+
+      </div>
+    </a>
+<!--------------------------------------------------------------------------------- -->
+		<!---------------------------------------------------------------------------------   7 -->
+    <a href="javascript:viewpage('museum');" class="elementlink ddd scan" >
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/museum.jpg">
+          <div class="sticker ddd">
+          </div>
+          <div class="sticker scan">
+          </div>
+					           <div class="sticker love">
+          </div>               
+                <p class="cover_title">Digital Museum</p>
+
+        </div>
+
+      </div>
+    </a>
+
+<!---------------------------------------------------------------------------------   11 -->
+    <a href="javascript:viewpage('');" class="elementlink dd art prog giflink" data-src="pics/cat.gif">
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/slof.png">
+          <div class="sticker dd">
+          </div>
+
+          <div class="sticker art">
+          </div>
+          <div class="sticker prog">
+          </div>
+					           <div class="sticker love">
+          </div>               
+
+
+                <p class="cover_title">Upcoming project</p>
+
+        </div>
+
+      </div>
+    </a>
+<!--------------------------------------------------------------------------------- -->
+		
+
+
+		
+<!---------------------------------------------------------------------------------   7 -->
+    <a href="javascript:viewpage('rig1');" class="elementlink ddd print scan prog" >
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/rig1.jpg">
+          <div class="sticker ddd">
+          </div>
+          <div class="sticker scan">
+          </div>
+           <div class="sticker prog">
+          </div>
+          <div class="sticker print">
+          </div>
+               <p class="cover_title">Photorig 1</p>
+
+        </div>
+
+      </div>
+    </a>
+
+		<!---------------------------------------------------------------------------------   7 -->
+    <a href="javascript:viewpage('rig2');" class="elementlink ddd print scan prog" >
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/rig2.jpg">
+           <div class="sticker ddd">
+          </div>
+          <div class="sticker scan">
+          </div>
+           <div class="sticker prog">
+          </div>
+          <div class="sticker print">
+          </div>
+                <p class="cover_title">Photorig 2</p>
+
+        </div>
+
+      </div>
+    </a>
+
+
+
+<!---------------------------------------------------------------------------------   12 -->
+    <a href="javascript:viewpage('pixel');" class="elementlink ddd">
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/pixel.jpg">
+          <div class="sticker ddd">
+          </div>
+
+
+                <p class="cover_title">Light Accessories</p>
+
+        </div>
+
+      </div>
+    </a>
+<!--------------------------------------------------------------------------------- -->
+<!---------------------------------------------------------------------------------   9 -->
+    <a href="javascript:viewpage('expertto');" class="elementlink elementlink-tall dd prog">
+      <div class="element element-tall">
+        <div class="element_pic element_pic_tall">
+
+          <img src="pics/covers/expertto2.jpg">
+          <div class="sticker dd">
+          </div>
+          <div class="sticker prog">
+          </div>
+
+
+                <p class="cover_title">ExpertTO App</p>
+
+        </div>
+
+      </div>
+    </a>
+<!--------------------------------------------------------------------------------- -->	
+<!---------------------------------------------------------------------------------   13 -->
+    <a href="javascript:viewpage('zavod');" class="elementlink ddd">
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/zavod.jpg">
+          <div class="sticker ddd">
+          </div>
+
+
+                <p class="cover_title">Factory texturing</p>
+
+        </div>
+
+      </div>
+    </a>
+<!--------------------------------------------------------------------------------- -->
+
+
+
+<!---------------------------------------------------------------------------------   7 -->
+    <a href="javascript:viewpage('cloth');" class="elementlink ddd scan" >
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/cloth.jpg">
+          <div class="sticker ddd">
+          </div>
+          <div class="sticker scan">
+          </div>
+                <p class="cover_title">Cloth scans</p>
+
+        </div>
+
+      </div>
+    </a>
+
+<!---------------------------------------------------------------------------------   14 -->
+    <a href="javascript:viewpage('busts');" class="elementlink ddd print scan">
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/busts.png">
+          <div class="sticker ddd">
+          </div>
+          <div class="sticker print">
+          </div>
+          <div class="sticker scan">
+          </div>
+
+
+                <p class="cover_title">3D Busts</p>
+
+        </div>
+
+      </div>
+    </a>
+<!--------------------------------------------------------------------------------- -->
+<!---------------------------------------------------------------------------------   16 -->
+    <a href="javascript:viewpage('zahar');" class="elementlink ddd scan print">
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/zahar.png">
+          <div class="sticker scan">
+          </div>
+          <div class="sticker ddd">
+          </div>
+          <div class="sticker print">
+          </div>
+
+
+                <p class="cover_title">Zaharzhevsky statue</p>
+
+        </div>
+
+      </div>
+    </a>
+<!--------------------------------------------------------------------------------- -->
+<!---------------------------------------------------------------------------------   18 -->
+    <a href="javascript:viewpage('snow');" class="elementlink ddd dd">
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/snow.jpg">
+          <div class="sticker dd">
+          </div>
+
+          <div class="sticker ddd">
+          </div>
+
+                <p class="cover_title">Snowmobile</p>
+
+        </div>
+
+      </div>
+    </a>
+<!--------------------------------------------------------------------------------- -->
+
+<!---------------------------------------------------------------------------------   17 -->
+    <a href="javascript:viewpage('techno_design');" class="elementlink dd">
+      <div class="element">
+        <div class="element_pic">
+          <img src="pics/covers/techno_design.jpg">
+          <div class="sticker dd">
+          </div>
+
+					
+          <div class="sticker love">
+          </div>               
+
+
+                <p class="cover_title">TechnoDiagnost design</p>
+
+        </div>
+
+      </div>
+    </a>
+<!--------------------------------------------------------------------------------- -->		
+		
+<!---------------------------------------------------------------------------------   17 -->
+    <a href="javascript:viewpage('nonform');" class="elementlink dd art">
+      <div class="element">
+        <div class="element_pic">
+          <img src="pics/covers/nonform.jpg">
+          <div class="sticker dd">
+          </div>
+
+          <div class="sticker art">
+          </div>
+					
+					           <div class="sticker love">
+          </div>               
+
+
+                <p class="cover_title">Nonform</p>
+
+        </div>
+
+      </div>
+    </a>
+<!--------------------------------------------------------------------------------- -->
+		<!---------------------------------------------------------------------------------   10 -->
+    <a href="javascript:viewpage('webippt');" class="elementlink elementlink-wide dd ddd">
+      <div class="element element-wide">
+        <div class="element_pic element_pic_wide">
+
+          <img src="pics/covers/webippt2.jpg">
+          <div class="sticker sticker_wide aug">
+          </div>
+          <div class="sticker sticker_wide ddd">
+          </div>
+          <div class="sticker sticker_wide prog">
+          </div>
+
+
+                <p class="cover_title">IPPT Web App</p>
+
+        </div>
+
+      </div>
+    </a>
+<!--------------------------------------------------------------------------------- -->
+
+<!---------------------------------------------------------------------------------   17 -->
+    <a href="javascript:viewpage('owl');" class="elementlink ddd scan print">
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/owl.jpg">
+          <div class="sticker ddd">
+          </div>
+          <div class="sticker scan">
+          </div>
+          <div class="sticker print">
+          </div>
+
+
+                <p class="cover_title">Statue 3D reconstruction</p>
+
+        </div>
+
+      </div>
+    </a>
+<!--------------------------------------------------------------------------------- -->
+
+<!---------------------------------------------------------------------------------   9 -->
+    <a href="javascript:viewpage('techdc');" class="elementlink dd prog">
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/techdc.jpg">
+          <div class="sticker dd">
+          </div>
+          <div class="sticker prog">
+          </div>
+
+
+                <p class="cover_title">TechnoDiagnost App</p>
+
+        </div>
+
+      </div>
+    </a>
+<!--------------------------------------------------------------------------------- -->			
+
+<!---------------------------------------------------------------------------------   15 -->
+    <a href="javascript:viewpage('robots');" class="elementlink ddd">
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/robot.png">
+          <div class="sticker ddd">
+          </div>
+
+
+                <p class="cover_title">Robot design</p>
+
+        </div>
+
+      </div>
+    </a>
+<!--------------------------------------------------------------------------------- -->
+
+
+<!---------------------------------------------------------------------------------   7 -->
+    <a href="javascript:viewpage('sweet');" class="elementlink ddd scan" >
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/sweet.jpg">
+          <div class="sticker ddd">
+          </div>
+          <div class="sticker scan">
+          </div>
+                <p class="cover_title">Sweet scans</p>
+
+        </div>
+
+      </div>
+    </a>
+
+<!---------------------------------------------------------------------------------   18 -->
+    <a href="javascript:viewpage('postcards');" class="elementlink dd art">
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/postcard.jpg">
+          <div class="sticker dd">
+          </div>
+
+          <div class="sticker art">
+          </div>
+
+                <p class="cover_title">Postcards</p>
+
+        </div>
+
+      </div>
+    </a>
+<!--------------------------------------------------------------------------------- -->
+
+<!---------------------------------------------------------------------------------   18 -->
+    <a href="javascript:viewpage('portfolio');" class="elementlink dd prog">
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/pictures.jpg">
+          <div class="sticker dd">
+          </div>
+
+          <div class="sticker prog">
+          </div>
+					
+					           <div class="sticker love">
+          </div>               
+
+                <p class="cover_title">Portfolio</p>
+
+        </div>
+
+      </div>
+    </a>
+<!--------------------------------------------------------------------------------- -->
+
+
+<!---------------------------------------------------------------------------------   18 -->
+    <a href="javascript:viewpage('var2d');" class="elementlink dd art">
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/various.jpg">
+          <div class="sticker dd">
+          </div>
+
+          <div class="sticker prog">
+          </div>
+
+                <p class="cover_title">Various 2D</p>
+
+        </div>
+
+      </div>
+    </a>
+<!--------------------------------------------------------------------------------- -->
+
+<!---------------------------------------------------------------------------------   18 -->
+    <a href="javascript:viewpage('var3d');" class="elementlink ddd">
+      <div class="element">
+        <div class="element_pic">
+
+          <img src="pics/covers/various3d.jpg">
+          <div class="sticker ddd">
+          </div>
+
+                <p class="cover_title">Various 3D</p>
+
+        </div>
+
+      </div>
+    </a>
+<!--------------------------------------------------------------------------------- -->
+
+<!------------ -->
+		
+		<p style="margin-top:50px; margin-left:250px; font-style:italic; color:grey; display:inline-block; "><img src="pics/love_sticker.png" style=" vertical-align: middle;"> —  these are my personal favourites</p>
+	 
+	
+	 </div>
+	 
+	 <div class="dots" style="margin-top:60px;">
+   </div>
+
+	 <div style="height:650px; width:100%; position:relative">
+	  <div style="height:650px; width:100%; position:absolute; top:0;left:0;">
+
+		 <div class="gradient_left">
+		 </div>
+		 <div class="gradient_right">
+		 </div>
+
+	 	 <div class="exp">
+					
+				<div class="about_title" >
+       		 <p>Experience</p>
+					
+<!--
+					<div class="back">
+						<img src="pics/back.png">
+					</div>
+					<div class="forward">
+						<img src="pics/forward.png">
+					</div>                         -->
+					
+					<div class="wawa">
+						<img src="pics/wawa/1991.png" class="1991">
+						<img src="pics/wawa/2012.png" class="2012">
+						<img src="pics/wawa/2013.png" class="2013">
+						<img src="pics/wawa/2014.png" class="2014">
+						<img src="pics/wawa/2015.png" class="2015">
+						<img src="pics/wawa/2016.png" class="2016">
+						<img src="pics/wawa/2017.png" class="2017" style="left:44px; top:-18px;">
+					</div>
+					
+					<div class="stuff">
+						<img src="pics/wawa/stuff.png">
+					</div>
+					
+     		</div>
+					 <div class="slider_space">
+							 <div id="slider" class="draggable">
+
+							 </div>
+					 </div>
+
+				 <div id="companies_wrapper">
+						 <div class="company you">
+							 <div class="next">
+								 ?
+							 </div>
+							 <div class="next">
+								 <p style='font-size:14pt; font-weight:400;font-style:italic; margin-top:-40px;'>
+									 <a href="mailto:hi@ivan.pictures?Subject=Job%20offer" 	style="font-size:14pt; font-weight:400;
+									 font-style:italic; margin-top:-40px;border-bottom: 2px solid #bbbbbb; 
+									 text-decoration: none; color:#bbbbbb">hi@ivan.pictures</a> ;)</p>
+							 </div>
+							 
+						 </div>
+					 
+						 <div class="company selfemployed">
+							<div class="gradient_bottom">
+						  </div>
+
+							 <img src="pics/companies/selfemployed.jpg" class="exp_logo selectDisable">
+							 <div class="exp_inshort">
+								 <div class="exp_inshort_left">
+									 <div class="exp_inshort_left_line slfmpld">
+							 		 </div>
+							 	 </div>
+						 		<div class="exp_inshort_right">
+									<p class="thick">Position:</p><p class="thin-italic">Self-employed web developer, <br>Designer <br><br></p>
+									<p class="thick">Experience:</p><p class="thin-italic">1 year</p>
+							  </div>
+							 </div>
+							 
+							 <div class="exp_tools" style="margin-left: 35px;">
+								 <img src="pics/tools/js.jpg">
+								 <img src="pics/tools/html.jpg">
+								 <img src="pics/tools/angular.jpg">
+								 <img src="pics/tools/ionic.jpg">
+								 <img src="pics/tools/trello.jpg">									 
+								 <img src="pics/tools/git.jpg">								 
+								 <img src="pics/tools/slack.jpg">	
+	
+<!-- 								 <img src="pics/tools/photoshop.png"> -->
+							 </div>
+							 
+							 <div class="exp_description">
+								 <div class="exp_description_line">
+									 <p>Switched to freelance mobile/web developement:</p>
+								 </div>
+								 
+								 <div class="exp_description_line">
+									 <div class="exp_description_emoji">
+										<div class="circle slfmpld">
+										 	
+									  </div>
+
+									 </div>
+									 <div class="exp_description_text">
+											<p>prefer cross-platform mobile e.g. Angular 2 + Ionic 2, but also have some experience with Swift;</p>
+									 </div>
+								 </div>
+								 <div class="exp_description_line">
+									 <div class="exp_description_emoji">
+										<div class="circle slfmpld">
+										 	
+									  </div>
+									 </div>
+									 <div class="exp_description_text">
+										 <p>focus on front-end, but usually work in team with a couple of developers, so we could create fully-functional web/mobile apps;</p>
+									 </div>
+								 </div>
+								 <div class="exp_description_line">
+									 <div class="exp_description_emoji">
+										<div class="circle slfmpld">
+										 	
+									  </div>
+									 </div>
+									 <div class="exp_description_text">
+										 <p>I just looove programming, always learn new things. For example right now I really like diving into Elm and also started switching from Angular to React.</p>
+									 </div>
+								 </div>
+								 
+								 
+							 </div>
+					 </div>
+
+						 <div class="company motionpix">
+							<div class="gradient_bottom">
+						  </div>
+
+							 <img src="pics/companies/motionpix.png" class="exp_logo selectDisable">
+							 <div class="exp_inshort">
+								 <div class="exp_inshort_left">
+									 <div class="exp_inshort_left_line mpx">
+							 		 </div>
+							 	 </div>
+						 		<div class="exp_inshort_right">
+									<p class="thick">Position:</p><p class="thin-italic">Programmer, 3D modeler,<br>Designer <br><br></p>
+									<p class="thick">Experience:</p><p class="thin-italic">1,5 years</p>
+							  </div>
+							 </div>
+							 
+							 <div class="exp_tools">
+								 <img src="pics/tools/max.png">
+								 <img src="pics/tools/vray.png">
+								 <img src="pics/tools/unity.png">
+								 <img src="pics/tools/c.png">
+								 <img src="pics/tools/photoshop.png">
+								 <img src="pics/tools/keyshot.png">
+							 </div>
+							 
+							 <div class="exp_description">
+								 <div class="exp_description_line">
+									 <p>Worked as multi-disciplinary 3D/2D designer and programmer:</p>
+								 </div>
+								 
+								 <div class="exp_description_line">
+									 <div class="exp_description_emoji">
+										<div class="circle mpx">
+										 	
+									  </div>
+
+									 </div>
+									 <div class="exp_description_text">
+											<p>coded 6 Augmented reality apps (4 simple and 2 big, complex AR projects);</p>
+									 </div>
+								 </div>
+								 <div class="exp_description_line">
+									 <div class="exp_description_emoji">
+										<div class="circle mpx">
+										 	
+									  </div>
+									 </div>
+									 <div class="exp_description_text">
+										 <p>all kinds of 3D (modeling, UV-mapping, texturing, rendering, a little scripting);</p>
+									 </div>
+								 </div>
+								 <div class="exp_description_line">
+									 <div class="exp_description_emoji">
+										<div class="circle mpx">
+										 	
+									  </div>
+									 </div>
+									 <div class="exp_description_text">
+										 <p>all kinds of 2D (drawing, editing, masking, color-correction, retouche etc. etc.).</p>
+									 </div>
+								 </div>
+								 
+								 
+							 </div>
+							 
+							 
+						 </div>
+						 <div class="company lenincraft">
+							<div class="gradient_bottom">
+						  </div>
+							 
+							 <img src="pics/companies/lc.jpg" class="exp_logo selectDisable">
+							 <div class="exp_inshort">
+								 <div class="exp_inshort_left">
+									 <div class="exp_inshort_left_line lc">
+							 		 </div>
+							 	 </div>
+						 		<div class="exp_inshort_right">
+									<p class="thick">Position:</p><p class="thin-italic">Co-founder, 3D modeler, <br>Designer <br><br></p>
+									<p class="thick">Experience:</p><p class="thin-italic">2 years</p>
+							  </div>
+							 </div>
+							 
+							 <div class="exp_tools">
+								 <img src="pics/tools/zbrush.png">
+								 <img src="pics/tools/max.png">
+								 <img src="pics/tools/agisoft.png">
+								 <img src="pics/tools/magics.png">
+								 <img src="pics/tools/photoshop.png">
+							 </div>
+							 
+							 <div class="exp_description">
+								 <div class="exp_description_line">
+									 <p>Co-founded the company, was involved in all aspects of company's live, including:</p>
+								 </div>
+								 
+								 <div class="exp_description_line">
+									 <div class="exp_description_emoji">
+										<div class="circle lc">
+										 	
+									  </div>
+									 </div>
+									 <div class="exp_description_text">
+											<p>developing technological process of 3D scanning and 3D	printing- teaching and explaining this process 
+												to new workers and on paid courses;</p>
+									 </div>
+								 </div>
+								 <div class="exp_description_line">
+									 <div class="exp_description_emoji">
+										<div class="circle lc">
+										 	
+									  </div>
+									 </div>
+									 <div class="exp_description_text">
+										 <p>creating and programming photogrammetry rig;</p>
+									 </div>
+								 </div>
+								 <div class="exp_description_line">
+									 <div class="exp_description_emoji">
+											<div class="circle lc">
+										 	
+									  </div>
+								 </div>
+									 <div class="exp_description_text">
+										 <p>the company's growth and promotion;</p>
+									 </div>
+								 </div>
+								 <div class="exp_description_line">
+									 <div class="exp_description_emoji">
+										<div class="circle lc">
+										 	
+									  </div>
+									 </div>
+									 <div class="exp_description_text">
+										 <p>participation in exhibitions and conferentions-	communication with investors, contractors and clients;</p>
+									 </div>
+								 </div>
+								 <div class="exp_description_line">
+									 <div class="exp_description_emoji">
+										<div class="circle lc">
+										 	
+									  </div>
+									 </div>
+									 <div class="exp_description_text">
+										 <p>communication with investors, contractors and clients</p>
+									 </div>
+								 </div>
+								 
+							 </div>
+						 </div>
+						 <div class="company iva">
+							<div class="gradient_bottom">
+						  </div>
+
+							 <img src="pics/companies/iva.png" class="exp_logo selectDisable">
+							 <div class="exp_inshort">
+								 <div class="exp_inshort_left">
+									 <div class="exp_inshort_left_line iva_ltd">
+							 		 </div>
+							 	 </div>
+						 		<div class="exp_inshort_right">
+									<p class="thick">Position:</p><p class="thin-italic">Co-founder, Manager <br><br></p>
+									<p class="thick">Experience:</p><p class="thin-italic">1 year</p>
+							  </div>
+							 </div>
+							 
+							 <div class="exp_tools">
+								 <img src="pics/tools/excel.png">
+								 <img src="pics/tools/mouth.png">
+								 <img src="pics/tools/goodbad.png">
+							 </div>
+							 
+							 <div class="exp_description">
+								 <div class="exp_description_line">
+									 <p>Co-founded the company, was responsible for organizing the workers:</p>
+								 </div>
+								 
+								 <div class="exp_description_line">
+									 <div class="exp_description_emoji">
+										<div class="circle iva_ltd">
+										 	
+									  </div>
+									 </div>
+									 <div class="exp_description_text">
+											<p>controlled common workflow, checked if workers do their job;</p>
+									 </div>
+								 </div>
+								 <div class="exp_description_line">
+									 <div class="exp_description_emoji">
+										<div class="circle iva_ltd">
+										 	
+									  </div>
+									 </div>
+									 <div class="exp_description_text">
+										 <p>helped if something went wrong.</p>
+									 </div>
+								 </div>
+								 
+							 </div>
+							 
+							 
+						 </div>
+						 <div class="company polywork">
+							<div class="gradient_bottom">
+						  </div>
+							 <img src="pics/companies/polywork.png" class="exp_logo selectDisable">
+							 <div class="exp_inshort">
+								 <div class="exp_inshort_left">
+									 <div class="exp_inshort_left_line plwrk">
+							 		 </div>
+							 	 </div>
+						 		<div class="exp_inshort_right">
+									<p class="thick">Position:</p><p class="thin-italic">Founder, Manager<br><br></p>
+									<p class="thick">Experience:</p><p class="thin-italic">0,5 years</p>
+							  </div>
+							 </div>
+							 
+							 <div class="exp_tools">
+								 <img src="pics/tools/mouth.png">
+								 <img src="pics/tools/goodbad.png">
+							 </div>
+							 
+							 <div class="exp_description">
+								 <div class="exp_description_line">
+									 <p>As an experiment, organized around 40 students from Saint-Petersburg Polytechnical University, 
+										 divided them into 6 groups to develop 6 different products, including selfie mirror (Mirfie), 
+										 thin client (both Raspberry Pi based) and 3 iOS apps. <br><br>
+										Only two of the projects lasted to a prototype, one of them (selfie mirror) had some sells, 
+										 participated in several 	exhibitions.
+</p>
+								 </div>
+								 
+								 <div class="exp_description_line">
+									 <div class="exp_description_emoji">
+										<div class="circle plwrk">
+										 	
+									  </div>
+									 </div>
+									 <div class="exp_description_text">
+											<p>Set tasks, suggested tools and solutions, organized work of 40 people in 6 groups, controled progress;</p>
+									 </div>
+								 </div>
+								 <div class="exp_description_line">
+									 <div class="exp_description_emoji">
+										<div class="circle plwrk">
+										 	
+									  </div>
+									 </div>
+									 <div class="exp_description_text">
+										 <p>came up with all the ideas, invested money and searched for external financing, communicated with contractors and clients.</p>
+									 </div>
+								 </div>
+								 
+							 </div>
+							 
+						 </div>
+						 <div class="company inkam">
+							<div class="gradient_bottom">
+						  </div>
+							 <img src="pics/companies/inkam.jpg" class="exp_logo selectDisable">
+							 <div class="exp_inshort">
+								 <div class="exp_inshort_left">
+									 <div class="exp_inshort_left_line inkm">
+							 		 </div>
+							 	 </div>
+						 		<div class="exp_inshort_right">
+									<p class="thick">Position:</p><p class="thin-italic">Co-founder, Manager, Programmer<br><br></p>
+									<p class="thick">Experience:</p><p class="thin-italic">1,5 years</p>
+							  </div>
+							 </div>
+							 
+							 <div class="exp_tools">
+								 <img src="pics/tools/delphi.png">
+								 <img src="pics/tools/mouth.png">
+							 </div>
+							 
+							 <div class="exp_description">
+								 <div class="exp_description_line">
+									 <p>Co-founded the company, found invesments, coded some parts of the service we were creating (text recognition system),	managed development process (4 programmists team).
+</p>
+								 </div>
+								 
+
+								 
+							 </div>
+							 
+						 </div>
+						 <div class="company planeta">
+							<div class="gradient_bottom">
+						  </div>
+							 <img src="pics/companies/planeta.png" class="exp_logo selectDisable">
+							 <div class="exp_inshort">
+								 <div class="exp_inshort_left">
+									 <div class="exp_inshort_left_line plnt">
+							 		 </div>
+							 	 </div>
+						 		<div class="exp_inshort_right">
+									<p class="thick">Position:</p><p class="thin-italic">Designer<br><br></p>
+									<p class="thick">Experience:</p><p class="thin-italic">0,5 years</p>
+							  </div>
+							 </div>
+							 
+							 <div class="exp_tools">
+								 <img src="pics/tools/max.png">
+								 <img src="pics/tools/photoshop.png">
+							 </div>
+							 
+							 <div class="exp_description">
+								 <div class="exp_description_line">
+									 <p>Worked after university classes, mostly polygraphy design, but also some 3D modeling of domes the company was selling.</p>
+								 </div>
+								 
+
+								 
+							 </div>
+							 
+						 </div>
+						 <div class="company omglab">
+							<div class="gradient_bottom">
+						  </div>
+							 <img src="pics/companies/omglab.png" class="exp_logo selectDisable">
+							 <div class="exp_inshort">
+								 <div class="exp_inshort_left">
+									 <div class="exp_inshort_left_line omg">
+							 		 </div>
+							 	 </div>
+						 		<div class="exp_inshort_right">
+									<p class="thick">Position:</p><p class="thin-italic">Web designer<br><br></p>
+									<p class="thick">Experience:</p><p class="thin-italic">0,5 years</p>
+							  </div>
+							 </div>
+							 
+							 <div class="exp_tools">
+								 <img src="pics/tools/photoshop.png"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							 </div>
+							 
+							 <div class="exp_description">
+								 <div class="exp_description_line">
+									 <p>Design of site's general layout and rendering all the elements. Also made a couple of logotypes for the company's clients.</p>
+								 </div>
+								 
+
+								 
+							 </div>
+							 
+						 </div>
+		 		  </div>
+	
+  	 	</div>
+		</div>
+	 </div> 
+
+	 
+	 <div class="dots" style="margin-top:90px;">
+   </div>
+
+
+
+   <div class="footer">
+
+    <div class="about">
+
+      <div class="about_title" >
+        <p>Hobbies and other skills</p>
+      </div>
+
+      <div class="hobbies_text">
+              <div class="hobbies_image">
+                <img src="pics/hobbies.png" >
+              </div>
+
+        <img src="pics/wawa.png">
+         <p>  I know Russian (my mother-tongue), English, a bit French, and also learn Korean (because it has the coolest writing system, 한글)
+         and Icelandic (because it was the language of vikings).<br><br>
+
+          At my spare time I like to play classic guitar, go regularly to a gym and learn something new about math, physics, astronomy
+        	and other sciences.<br><br>
+
+          Also I really like supporting text with pictures<br><br><br><br>
+
+
+        </p>
+
+
+      </div>
+          <div class="social">
+            <a href="http://www.vk.com/wa_wa"><img src="pics/vk.png" style="margin-left:55px;"></a>
+            <a href="http://www.facebook.com/vasiljev.iv"><img src="pics/facebook.png" style="margin-left:5px;"></a>
+
+						<p><br>You can contact me over email: <a href="mailto:hi@ivan.pictures?Subject=Job%20offer" style="font-weight:600; border-bottom: 3px solid #497cff; text-decoration: none; color:black">hi@ivan.pictures</a></p>
+          </div>
+
+    </div>
+
+   </div>
+
+   <div class="dots" style="margin-top:70px;">
+   </div>
+
+   <div class="recommendations">
+    <div class="about_title" style="margin-top:30px;">Recommendations</div>
+    <div class="real_recom">
+      <div class="real_recom_part" >
+        <img src="pics/nikita.png" >
+        <div class="recom_text">
+          <b>Nikita Enakaev</b><br><br>
+          Technical Director<br>
+          <a href="www.motionpix.ru">Motionpix</a><br><br>
+        </div>
+        <div class="recom_text2">
+          "Ivan is creative, resoursefull and skillful professional, eager to learn new things and take initiative."<br><br>
+        </div>
+      </div>
+      <div class="real_recom_part" >
+          <img src="pics/masha.png" >
+          <div class="recom_text">
+            <b>Maria Alisova</b><br><br>
+            CEO<br>
+            <font style="color:grey">Inkam Ltd.</font>
+          </div>
+          <div class="recom_text2">
+            "Ivan has a great mix of skills: both design and programming, that's really usefull for managing a team."<br><br>
+          </div>
+      </div>
+      <div class="real_recom_part" >
+        <img src="pics/vitya.png" >
+        <div class="recom_text">
+          <b>Viktor Ivanov</b><br><br>
+          CEO<br>
+          <font style="color:grey">IVA Ltd.</font>
+        </div>
+        <div class="recom_text2">
+          "He can assemble a team and manage all aspects of product's development process, like algorithms optimization or logotype design."
+        </div>
+      </div>
+     </div>
+
+   </div>
+     <div class="dots" style="margin-top:15px;">
+     </div>
+
+
+     <div class="disclaimer">
+       Some other recommendations (these are not real though):
+     </div>
+
+     <div class="celeb_pics">
+       <img src="pics/celebs/arny.png" class="recommendations_img arny celeb" style="margin-left:70px;">
+       <img src="pics/celebs/emma.png" class="recommendations_img emma celeb" style="margin-left:290px;">
+       <img src="pics/celebs/batman.png" class="recommendations_img batman celeb" style="margin-left:-350px;">
+       <img src="pics/celebs/barak.png" class="recommendations_img barak celeb" style="margin-left:-160px;">
+       <img src="pics/celebs/south.png" class="recommendations_img south celeb" style="margin-left:450px;">
+       <img src="pics/celebs/trump.png" class="recommendations_img celeb" style="left:0px;">
+     </div>
+
+
+ </div>
+
+
+		 <img src="pics/cat.png" class="easter-egg">
+	 
+ </body>
+</html>

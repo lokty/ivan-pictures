@@ -1,0 +1,68 @@
+.yellowblock {
+  // height: 1990px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 90px;
+  padding-bottom: 45px;
+
+
+
+  h1 {
+    text-align: center;
+    margin-top: 55px;
+    font-weight: 700;
+    width: 70%;
+    font-size: 24pt;
+  }
+
+  .devices {
+    position: relative;
+    width: 1px;
+    height: 540px;
+    margin-top: 33px;
+    display: flex;
+    justify-content: flex-start;
+
+    .iphone-xs-yellow {
+      top: 160px;
+      // position: absolute;
+      // margin-top:
+    }
+    img {
+      position: absolute;
+    }
+    .macbook {
+      left: -220px;
+    }
+    .ipad {
+      top: 70px;
+      left: -320px;
+    }
+    .mobile {
+      top: 200px;
+      left: -120px;
+
+    }
+  }
+  .info {
+    margin-top: 75px;
+    width: 65%;
+    display: flex-inline;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    p {
+      text-align: center;
+      font-size: 16px;
+    }
+    .dk-btn {
+      border-width: 2px;
+      border-style: solid;
+      border-color: $BLACK;
+
+    }
+  }
+}

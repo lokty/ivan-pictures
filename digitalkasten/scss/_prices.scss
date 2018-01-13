@@ -1,0 +1,178 @@
+.prices {
+
+  .yellow-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 115px;
+    h1 {
+      text-align: center;
+    }
+    .description {
+      margin-top: 35px;
+    }
+  }
+  .lake {
+    padding-bottom: 60px;
+    width: 100%;
+    // height: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff url(../img/lake.jpg) no-repeat center center;
+    background-size: 100%;
+    background-size: cover;
+    .kostelnos {
+      width: 330px;
+      padding-bottom: 43px;
+      // height: 400px;
+      border-radius: 10px;
+      box-shadow: rgba(0,0,0,0.3) 0 0 20px;
+      background-color: rgba(255,255,255,0.7);
+      // opacity: .6;
+      margin-top: -80px;
+      .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        position: relative;
+        h1 {
+          text-align: center;
+          text-transform: none;
+        }
+        img {
+          position: absolute;
+          bottom: 0;
+        }
+      }
+      .checks {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        .icons {
+          text-align: right;
+          padding: 0;
+        }
+        // text-align: center;
+
+        // justify-content: center;
+        .empfangen {
+          font-size: 14px;
+          font-weight: 300;
+          color: $GRAY;
+          margin-top: 25px;
+        }
+        .unbegrenzt {
+          // margin-top: 13px;
+          font-size: 16px;
+        }
+        .dk-btn {
+          align-self: center;
+        }
+
+      }
+    }
+
+    .bullets {
+      margin-top: 45px;
+      padding: 0px 150px 0px 150px;
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      .block {
+        height: auto;
+        padding: 16px 10px 16px 10px;
+        width: 200px;
+        box-shadow: rgba(0,0,0,0.3) 0 0 20px;
+        background-color: rgba(255,255,255,0.5);
+        text-align: center;
+        position: relative;
+        @media (max-width: 991px) {
+          margin-top: 10px;
+        }
+        .fa-question-circle {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          color: $YELLOW_DARK;
+          &:hover {
+            color: $YELLOW;
+            cursor: pointer;
+          }
+        }
+        .text {
+          font-size: 12px;
+        }
+        .bigger-text {
+          font-size: 14px;
+        }
+      }
+    }
+
+  }
+
+  .niveau-title {
+    padding-top: 43px;
+    background-color: $GRAY;
+    text-align: center;
+    color: $WHITE
+  }
+
+  .niveau {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: $GRAY;
+    margin-left: 0px;
+    margin-right: 0px;
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+      padding-left: 40px;
+      padding-right: 40px;
+      align-items: center;
+      flex-direction: column;
+
+    }
+
+    .block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      text-align: center;
+      // height: 450px;
+      width: 30%;
+      max-width: 400px;
+      @media (max-width: 767px) {
+        margin-bottom: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+        height: auto;
+        width: 80%;
+      }
+
+      .portrait {
+        text-align: center;
+      }
+      .description {
+        font-size: 16px;
+        margin-top: 15px;
+        font-weight: 700;
+      }
+      .citation {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 15px;
+      }
+    }
+    p {
+      color: $WHITE;
+    }
+  }
+
+}
